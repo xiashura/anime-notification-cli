@@ -1,0 +1,26 @@
+[
+    {
+        "next_episode": 2,
+        "next_episode_at": "2021-01-03T01:05:00.000+03:00",
+        "duration": 180,
+        "anime": {
+            "id": 41381,
+            "name": "Gal-gaku.: Hijiri Girls Square Gakuin",
+            "russian": "Школа для девочек: Святая Академия консервативных леди",
+            "image": {
+                "original": "/system/animes/original/41381.jpg?1608751998",
+                "preview": "/system/animes/preview/41381.jpg?1608751998",
+                "x96": "/system/animes/x96/41381.jpg?1608751998",
+                "x48": "/system/animes/x48/41381.jpg?1608751998"
+            },
+            "url": "/animes/41381-gal-gaku-hijiri-girls-square-gakuin",
+            "kind": "tv",
+            "score": "5.37",
+            "status": "ongoing",
+            "episodes": 0,
+            "episodes_aired": 1,
+            "aired_on": "2020-04-06",
+            "released_on": null
+        }
+    }
+]

@@ -14,4 +14,4 @@ anime-notification-cli -url=https://shikimori.one/xiashura/list/anime/mylist/wat
 ```
 
 ## Screenshot
- ![alt text](./2021-01-04_21-15.png "Title")
+![alt text](./2021-01-04_21-15.png "Title")

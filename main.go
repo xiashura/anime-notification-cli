@@ -13,7 +13,7 @@ func main() {
 	urlUser := flag.String("url", "", "")
 	flag.Parse()
 	if *urlUser == "" {
-		log.Fatal("url can't be empty pleas set url !")
+		log.Fatal("url can't be empty please set url !")
 	}
 
 	ongoings, err := parse.GetUserOngoing(*urlUser)

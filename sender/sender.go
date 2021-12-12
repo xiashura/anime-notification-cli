@@ -3,6 +3,7 @@ package sender
 import (
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"os"
 	"os/exec"
@@ -23,18 +24,19 @@ func Post(ongoing model.Ongoing) {
 }
 
 func getImageAndSave(url string, id int) string {
+	dirname, _ := os.UserHomeDir()
 
-	img, _ := os.Create("../tmp/" + fmt.Sprint(id) + ".png")
+	img, _ := os.Create(dirname + "/.cache/" + fmt.Sprint(id) + ".png")
 	defer img.Close()
 
 	resp, _ := http.Get(url)
 	defer resp.Body.Close()
 
-	// toPng([]byte(resp.Body.()))
-	b, _ := io.Copy(img, resp.Body)
+	b, err := io.Copy(img, resp.Body)
+	if err != nil {
+		log.Println(err)
+	}
 	fmt.Println(b)
-	// pwd, _ := os.Getwd()
-	//test
-	pwd := "/home/xiashura/Projects/go/src/github.com/xiashura/anime-notification-cli"
-	return pwd + "/tmp/" + fmt.Sprint(id) + ".png"
+
+	return dirname + "/.cache/" + fmt.Sprint(id) + ".png"
 }
